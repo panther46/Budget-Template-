@@ -67,6 +67,9 @@ obtenerPresupuesto = () =>{
 
       // Lo restamos
       restante -= conversion;
+      // Lo pasamos a string nuevamente
+      restante = String(restante);
+
       // Re escribimos el state, solo el restante
       this.setState({
         restante

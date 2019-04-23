@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 
 const Presupuesto = (props) =>{
@@ -9,5 +10,12 @@ const Presupuesto = (props) =>{
     )
 }
 
+
+//Checking PropTypes:
+
+Presupuesto.propTypes = {
+    presupuestoControlProp: PropTypes.string.isRequired
+
+}
 
 export default Presupuesto;
