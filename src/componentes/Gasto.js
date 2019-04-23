@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 
 
 class Gasto extends Component {
@@ -17,6 +18,13 @@ class Gasto extends Component {
             </li>
         )
     }
+
+}
+
+// Checking Proptypes:
+
+Gasto.propTypes = {
+    gasto : PropTypes.object.isRequired
 
 }
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import {revisarPresupuesto} from '../helpers.js';
+import PropTypes from 'prop-types';
 
 
 const Restante = (props) => {
@@ -12,6 +13,12 @@ const Restante = (props) => {
             <p>Restante: ${props.restanteControlProp}</p>
         </div>
     )
+}
+
+//Checking PropTypes:
+
+Restante.propTypes = {
+    restanteControlProp: PropTypes.string.isRequired
 }
 
 export default Restante;

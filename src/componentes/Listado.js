@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import '../css/main.css';
 import Gasto from './Gasto.js';
+import PropTypes from 'prop-types';
 
 
 class Listado extends Component{
@@ -20,6 +21,13 @@ class Listado extends Component{
     }
 }    
 
+
+// Checking Proptypes:
+
+Listado.propTypes = {
+    gastos : PropTypes.object.isRequired
+
+}
 
 
 export default Listado;
